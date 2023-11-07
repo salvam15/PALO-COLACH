@@ -1,0 +1,35 @@
+const videojuegos = [
+    {nombre: "minecraft", genero: "aventura", calificacion: 10},
+    {nombre: "LOL", genero: "moba", calificacion: 11},
+    {nombre: "Fortnait", genero: "niños rata", calificacion: 3},
+    ];
+    
+    const agregarEtiqueta = videojuegos.map(function(videojuego){
+        
+        const etiqueta = "--Excelente juego--";
+        return videojuego.nombre + etiqueta;
+    })
+    
+    console.log(agregarEtiqueta)
+    
+    
+    const libros = [
+        { titulo:"El hobbit", autor: "JRR Tolkien", paginas: 350},
+        { titulo:"Harry potter 1", autor: "Jk Rolling", paginas: 260},
+        { titulo:"Cuentos del exilio", autor: "Marcos navaja trivero quintiero", paginas:400}
+        ];
+        
+    const librosLargos = libros.filter(function(libro){
+        return libro.paginas > 300
+    })
+        
+        console.log(librosLargos)
+        
+        
+    let paises = ["Argentina","Cuba", "Peru"];
+    
+    paises.forEach(function(pais){
+        
+        console.log(pais)
+    })
+        
